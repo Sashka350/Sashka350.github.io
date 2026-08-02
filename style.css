@@ -569,6 +569,12 @@ section {
   flex-shrink: 0;
 }
 
+.contact-link__logo {
+  height: 18px;
+  width: auto;
+  flex-shrink: 0;
+}
+
 .contact-link:hover {
   background: var(--line);
 }
