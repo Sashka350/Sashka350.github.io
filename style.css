@@ -472,7 +472,8 @@ section {
 
 .document-card img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  max-width: 360px;
   height: auto;
   max-height: 460px;
   border-radius: 12px;
