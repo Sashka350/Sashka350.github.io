@@ -562,13 +562,6 @@ section {
   transition: background 0.2s ease;
 }
 
-.contact-link__icon {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-  flex-shrink: 0;
-}
-
 .contact-link__logo {
   height: 18px;
   width: auto;
@@ -660,5 +653,9 @@ section {
 
   .results__stats {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-link__logo {
+    height: 20px;
   }
 }
