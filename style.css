@@ -440,6 +440,53 @@ section {
   max-width: 560px;
 }
 
+/* ---------- Documents ---------- */
+
+.documents__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.document-card {
+  margin: 0;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.document-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.document-card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.document-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 460px;
+  border-radius: 12px;
+}
+
+.document-card__img--small {
+  max-height: 240px;
+}
+
+.document-card figcaption {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 /* ---------- How ---------- */
 
 .how__grid {
@@ -617,7 +664,8 @@ section {
   }
 
   .services__grid,
-  .reviews__grid {
+  .reviews__grid,
+  .documents__grid {
     grid-template-columns: 1fr;
   }
 
