@@ -84,16 +84,17 @@ body {
 
 .header__inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 12px 24px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 .logo {
   font-weight: 800;
-  font-size: 20px;
+  font-size: 17px;
   text-decoration: none;
   color: var(--ink);
 }
@@ -701,6 +702,19 @@ section {
 
   .results__stats {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .document-card img {
+    max-width: 260px;
+    max-height: 320px;
+  }
+
+  .document-card__img--small {
+    max-height: 220px;
+  }
+
+  .document-card figcaption {
+    font-size: 14px;
   }
 
   .contact-link__logo {
