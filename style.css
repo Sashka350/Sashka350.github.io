@@ -533,7 +533,7 @@ section {
 
 .contacts__inner {
   display: grid;
-  grid-template-columns: 1fr 460px;
+  grid-template-columns: 1fr;
   gap: 56px;
   align-items: start;
 }
@@ -550,6 +550,9 @@ section {
 }
 
 .contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
   color: var(--accent);
   font-weight: 700;
@@ -557,6 +560,13 @@ section {
   border-radius: 999px;
   background: var(--accent-soft);
   transition: background 0.2s ease;
+}
+
+.contact-link__icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 
 .contact-link:hover {
@@ -570,53 +580,6 @@ section {
 .contacts__profi a {
   color: var(--accent);
   font-weight: 700;
-}
-
-.contacts__form {
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 36px;
-  box-shadow: var(--shadow);
-  display: grid;
-  gap: 18px;
-}
-
-.contacts__form h3 {
-  font-size: 20px;
-  margin-bottom: 4px;
-}
-
-.contacts__form label {
-  display: grid;
-  gap: 6px;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.contacts__form input,
-.contacts__form select {
-  font-family: inherit;
-  font-size: 15px;
-  padding: 12px 16px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--bg-soft);
-  color: var(--ink);
-  outline: none;
-  transition: border-color 0.2s ease, background 0.2s ease;
-}
-
-.contacts__form input:focus,
-.contacts__form select:focus {
-  border-color: var(--accent);
-  background: #fff;
-}
-
-.contacts__form-note {
-  font-size: 12px;
-  color: var(--muted);
-  text-align: center;
 }
 
 /* ---------- Footer ---------- */
