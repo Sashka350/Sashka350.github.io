@@ -6,7 +6,7 @@
 
 Опубликован на GitHub Pages:
 
-- **https://sashka350.github.io/**
+- **https://sashka350.github.io/nastia-tutor/**
 
 Репозиторий: https://github.com/Sashka350/Sashka350.github.io
 
@@ -14,17 +14,19 @@
 
 ```
 .
-├── index.html        — страница сайта
-├── style.css         — стили
-├── photo_*.jpg       — фотографии
-└── .gitignore        — исключённые файлы (см. ниже)
+├── nastia-tutor/       — файлы сайта
+│   ├── index.html
+│   ├── style.css
+│   └── photo_*.jpg
+├── README.md
+└── .gitignore          — исключённые файлы (см. ниже)
 ```
 
 ## Как обновить сайт
 
 Работаем в локальной папке проекта: `C:\Репетиторство\Сайты_для_репов\Настя_русс`
 
-После правок выполни в этой папке:
+Файлы сайта лежат в подпапке `nastia-tutor`. После правок выполни в корне этой папки:
 
 ```
 git add .
